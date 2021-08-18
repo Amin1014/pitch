@@ -28,7 +28,7 @@ def register():
     db.session.add(user)
     db.session.commit()
     
-    mail_message("Welcome to PITCHTUBE.", "email/welcome_user", user.email, user = user)
+    mail_message("Welcome to PITCH.", "email/welcome_user", user.email, user = user)
 
     return redirect(url_for('auth.login'))
     title = "New Account"
